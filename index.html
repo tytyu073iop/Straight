@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Растровые алгоритмы</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+            width: 2000px; /* Визуальный размер */
+            height: 2000px; /* Визуальный размер */
+            image-rendering: pixelated; /* Для четкости пикселей */
+        }
+        .controls {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="drawStep()">Пошаговый алгоритм</button>
+        <button onclick="drawDDA()">Алгоритм ЦДА</button>
+        <button onclick="drawBresenham()">Алгоритм Брезенхема (прямая)</button>
+        <button onclick="drawCircle()">Алгоритм Брезенхема (окружность)</button>
+    </div>
+    <canvas id="canvas" width="400" height="400"></canvas> <!-- Увеличенное логическое разрешение -->
+    <script src="algorithms.js"></script>
+</body>
+</html>
